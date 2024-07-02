@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Pagina de pago</title>
+</head>
+<body>
+    <h1>Pagar</h1>
+        <h2>A life in membresía</h2>
+        <p>Proof</p>
+        <p>Prueba</p>
+        <p>Fecha de inicio de facturación:<span id="billingStartDate"></span></p>
+        <script>
+            var currentDate = new Date();
+            var day = currentDate.getDate();
+            var month = currentDate.getMonth() + 1;
+            var year = currentDate.getFullYear();
+            var formattedDate = day + '/' + month + '/' + year;
+            document.getElementById('billingStartDate').textContent = formattedDate;
+        </script>
+        <p><strong>$5 por mes</strong></p>
+        <p>Total hasta la fecha:<strong>$0.00</strong></p>
+        <p>A Life in</p>
+        <p>Agregar tarjeta de crédito o débito</p>
+        <form>
+            <label for="card-number">Número de tarjeta</label><br>
+            <input type="text" id="card-number" name="card-number" placeholder="Mastercard or Visa" required><br>
+            <label for="expiry-date">Fecha de caducidad</label><br>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM / AA" required><br>
+            <label for="cvc">CVC</label><br>
+            <input type="text" id="cvc" name="cvc" required><br>
+            <label for="cardholder-name">Nombre del dueño</label><br>
+            <input type="text" id="cardholder-name" name="cardholder-name" required><br>
+            <p>La facturación comenzará el <span id="billingStartDate"></span>, Cuando finalice su prueba gratuita, se renovará automáticamente cada mes. No se reembolsarán los pagos correspondientes a períodos de facturación parciales. Puede cancelar su membresía en cualquier momento en la configuración.
+            <a href="Registro_de_Cancelacion.html" target="_blank">Aprende más.</a></p>
+            <p>Al continuar, confirmas que tienes más de 18 años y aceptas estos términos.</p>
+            <p>Al continuar, aceptas los Términos de servicio de A Life in Payments. Nuestro Aviso de privacidad describe cómo se utilizan tus datos.</p>
+            <a href="../A_Life_in_Premium_Page.html">
+                <input type="button" class="Continue" value="continuar" name="continuar">
+            </a>
+        </form>
+</body>
+</html>
