@@ -1,0 +1,338 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    text-decoration: none;
+    font-family: PoppinsLight;
+    font-size: 70px;
+    font-weight: 100;
+}
+h2 {
+    font-family: PlayWriteDeGroudRegular, PoppinsLight;
+    font-size: 40px;
+    font-weight: 100;
+}
+h3 {
+    font-family: PlayWriteDeGroudRegular, PoppinsLight;
+    font-size: 25px;
+    font-weight: 100;
+}
+#h1Andorra {
+    /* padding: 50px;  */
+    /* margin-bottom: 50px; */
+    background-size: cover;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/1280px-Flag_of_Andorra.svg.png");
+    /* background-color: red; */
+    margin-top: 0px;
+    background-repeat: no-repeat;
+}
+.FlagsSize {
+    width: 300px;
+    height: 200px;
+}   
+.FormatP {
+    font-family: PlayWriteDeGroudExtraLight;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+}
+.RobotoPClassic {
+    font-family: RobotoCondensedLigth;
+    font-size: 13px;
+    font-weight: 200;
+}
+.submit {
+    letter-spacing: 5px;
+    font-family: RobotoCondensedLigth;
+}
+.imgFlag {
+    width: 300px;
+    height: 200px;
+}
+.imgPhoto {
+    width: 740px;
+    height: 500px;
+}
+.location {
+    width: 740px;
+    height: 500px;
+}
+.Form1 {
+    text-align: center;
+}
+.Countrih1 {
+    text-align: center;
+    text-decoration: none;
+    font-family: PoppinsLight;
+    font-size: 70px;
+    font-weight: 100;
+}
+.Form2 {
+    text-align: center;
+    text-decoration: none;
+    font-family: RobotoCondensedLigth;
+    font-size: 13px;
+    font-weight: 200;
+}
+.Pcenter{
+    text-align: center;
+    font-family: PlayWriteDeGroudExtraLight;
+    font-size: 15px;
+    font-weight: 100;
+}
+.SignUph3 {
+    text-align: center;
+    font-family: PlayWriteDeGroudRegular, PoppinsLight;
+    font-size: 20px;
+    font-weight: 100;
+}
+.ButtonSigUp {
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: RobotoCondensedLigth;
+    font-size: 20px;
+    font-weight: 100;
+}
+.Centerh2 {
+    text-align: center;
+    text-decoration: none;
+    font-family: PlayWriteDeGroudRegular, PoppinsLight;
+    font-size: 30px;
+    font-weight: 100;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.premiumBenefits {
+    margin-top: 20px;
+}
+
+.premiumBenefits h2 {
+    margin-top: 20px;
+}
+
+.questionForm {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.questionForm h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.questionForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.questionForm input[type="text"],
+.questionForm textarea,
+.questionForm input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.questionForm textarea {
+    resize: vertical;
+}
+
+.questionForm button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.questionForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#chatbox {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#userInput {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    width: 70px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.comments {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.comment {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #fff;
+}
+.Premiunh3 {
+    font-family: PlayWriteDeGroudRegular, PoppinsLight;
+    font-size: 20px;
+    font-weight: 100;
+}
+.GifAliIA {
+    text-align: center;
+    width: 500px;
+    height: 400px;
+}
+.premiumBenefits {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #a7139f68;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.questionForm {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #c3bebea5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.questionForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+.questionForm input[type="text"],
+.questionForm input[type="number"],
+.questionForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #c6bebed8;
+    border-radius: 4px;
+    resize: vertical;
+}
+.questionForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.questionForm button:hover {
+    background-color: #45a049;
+}

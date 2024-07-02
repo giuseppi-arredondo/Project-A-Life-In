@@ -1,0 +1,30 @@
+@font-face {
+    font-family: PoppinsLight;
+    src: url(/Fonts/Poppins-Light.ttf) format("Truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: PlayWriteDeGroudRegular;
+    src: url(/Fonts/PlaywriteDEGrund-Regular.ttf) format("Truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: PlayWriteDeGroudLight;
+    src: url(/Fonts/PlaywriteDEGrund-Light.ttf) format("Truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: PlayWriteDeGroudExtraLight;
+    src: url(/Fonts/PlaywriteDEGrund-ExtraLight.ttf) format("Truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: PlayWriteDeGroudThin;
+    src: url(/Fonts/PlaywriteDEGrund-Thin.ttf) format("Truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: RobotoCondensedLigth;
+    src: url(/Fonts/RobotoCondensed-Light.ttf) format("Truetype");
+    font-weight: 100;
+}
