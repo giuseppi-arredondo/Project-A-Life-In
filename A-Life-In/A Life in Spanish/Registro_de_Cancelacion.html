@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Cancelación de la inscripción</title>
+</head>
+<body>
+    <h1>Política de cancelación y condiciones de membresía de A Life In</h1>
+
+    <p>Gracias por considerar unirse a A Life In para recibir orientación sobre cómo emigrar a los países de sus sueños. Queremos asegurarnos de que tenga toda la información necesaria sobre nuestra membresía antes de continuar:</p>
+
+    <h2>Membresía y facturación:</h2>
+    <p>La membresía en A Life In cuesta $5 USD por mes. La facturación comenzará el <span id="billingStartDate"></span>, después de que finalice tu prueba gratuita, y se renovará automáticamente cada mes. Los pagos por períodos de facturación parciales no se reembolsarán.</p>
+    <script>
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        var month = currentDate.getMonth() + 1;
+        var year = currentDate.getFullYear();
+        var formattedDate = day + '/' + month + '/' + year;
+        document.getElementById('billingStartDate').textContent = formattedDate;
+    </script>
+
+    <h2>Política de cancelación:</h2>
+    <p>Puede cancelar su membresía en cualquier momento desde la configuración de su cuenta. Las cancelaciones entrarán en vigencia al final del período de facturación actual. No se aplican cargos por cancelación anticipada.</p>
+
+    <h2>Requisitos y Acuerdos:</h2>
+    <p>Al continuar con el proceso de membresía, confirmas que tienes al menos 18 años y aceptas estos términos de uso. También aceptas los Términos de servicio de A Life In Payments y nuestra Política de privacidad, que describe cómo se utilizarán tus datos personales.</p>
+
+    <h2>Soporte y asistencia:</h2>
+    <p>Estamos aquí para ayudarle en cada paso del proceso. Si tiene alguna pregunta sobre nuestra política de membresía, condiciones de cancelación o cualquier otro aspecto de nuestros servicios, no dude en contactarnos.</p>
+    <p>Gracias por confiar en A Life In para ayudarte a lograr tus sueños de inmigración y progreso. ¡Esperamos acompañarte en este emocionante viaje hacia un nuevo capítulo en tu vida!</p>
+
+    <h2>Información Adicional:</h2>
+    <p>Nos esforzamos por proporcionar una experiencia de usuario fluida y sin complicaciones. Nuestra plataforma está diseñada para ser intuitiva y fácil de usar, asegurando que puedas encontrar la información que necesitas de manera rápida y eficiente. A través de nuestras herramientas en línea, podrás realizar un seguimiento de tu progreso, recibir actualizaciones importantes y acceder a recursos adicionales que te ayudarán en tu viaje de inmigración.</p>
+    <p>Estamos constantemente mejorando nuestros servicios basándonos en los comentarios de nuestros miembros. Valoramos tu opinión y te animamos a compartir tus experiencias con nosotros. Tu retroalimentación es crucial para ayudarnos a mantener la calidad de nuestros servicios y asegurarnos de que estamos cumpliendo con tus expectativas.</p>
+    <p>A Life In se compromete a proteger tu privacidad y seguridad. Utilizamos medidas avanzadas de encriptación y protocolos de seguridad para proteger tus datos personales. Puedes estar seguro de que tu información estará segura con nosotros.</p>
+    <p>Nos sentimos honrados de ser parte de tu viaje hacia una nueva vida en el extranjero. Agradecemos tu confianza en nosotros y estamos emocionados de ayudarte a alcanzar tus metas de inmigración. ¡Gracias por elegir A Life In!</p>
+</body>
+</html>

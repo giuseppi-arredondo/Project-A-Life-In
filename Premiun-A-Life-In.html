@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Life In Premium</title>
+    <link rel="stylesheet" href="Style-A-Life_in.css">
+    <link rel="stylesheet" href="fonts-A-Life-in.css">
+    <style>
+        body {
+            font-family: PlayWriteDeGroudRegular, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>A Life In Premium</h1>
+
+            <h2>About A Life In</h2>
+            <p>At A Life In, we specialize in making the dream of living abroad a reality by providing personalized and detailed advisory services. Our mission is to offer crucial information and support at every stage of the immigration process.</p>
+
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <h3>Detailed Evaluation</h3>
+                    <p>We evaluate your skills, education, and experience to determine the best immigration options.</p>
+                </li>
+                <li>
+                    <h3>Destination Analysis</h3>
+                    <p>We analyze destination countries to help you choose the right place for your personal and professional growth.</p>
+                </li>
+                <li>
+                    <h3>Guidance and Counseling</h3>
+                    <p>We provide guidance on educational requirements, job opportunities, and factors affecting your immigration process.</p>
+                </li>
+                <li>
+                    <h3>Informational Support</h3>
+                    <p>We offer detailed information on political situation, healthcare, education, climate, and customs of each selected country.</p>
+                </li>
+                <li>
+                    <h3>Strategic Planning</h3>
+                    <p>We assist with strategic planning for a smooth transition to your new life abroad.</p>
+                </li>
+            </ul>
+
+            <div class="premiumBenefits">
+                <h2>Premium Membership Benefits</h2>
+                <ul>
+                    <li>
+                        <h3>Personalized Consultations</h3>
+                        <p>Receive one-on-one consultations with our immigration experts.</p>
+                    </li>
+                    <li>
+                        <h3>Priority Access</h3>
+                        <p>Get priority access to the latest immigration updates and policy changes.</p>
+                    </li>
+                    <li>
+                        <h3>Customized Strategies</h3>
+                        <p>Benefit from a customized immigration strategy tailored to your needs and goals.</p>
+                    </li>
+                    <li>
+                        <h3>Exclusive Network</h3>
+                        <p>Access our premium network of contacts and resources abroad.</p>
+                    </li>
+                </ul>
+                <p>Ready to take the next step? Book your appointment today!</p>
+            </div>
+
+            <div class="questionForm">
+                <h2>Questions for Your Emigration Plan</h2>
+                <form id="questionForm">
+                    <label for="travelCompanions">With whom do you plan to travel?</label>
+                    <input type="text" id="travelCompanions" name="travelCompanions" required>
+
+                    <label for="workPlan">What is your work plan abroad?</label>
+                    <textarea id="workPlan" name="workPlan" rows="4" required></textarea>
+
+                    <label for="travelBudget">How much do you estimate for your travel budget?</label>
+                    <input type="number" id="travelBudget" name="travelBudget" required>
+
+                    <label for="languagesKnown">How many languages do you speak?</label>
+                    <input type="number" id="languagesKnown" name="languagesKnown" required>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <section id="chatbox">
+            <h2>Chat with Ali</h2>
+            <div id="messages">
+                <div class="message">Ali: Welcome! How can I assist you today?</div>
+                <div class="message">You: Hello, I have some questions about immigration.</div>
+                <div class="message">Ali: Sure! Feel free to ask anything.</div>
+                <div class="message">You: What are the requirements for moving to Canada?</div>
+                <div class="message">Ali: I can help with that. Let me fetch the latest information for you.</div>
+            </div>
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    </div>
+
+    <footer>
+        <h3>Comments</h3>
+        <div class="comments">
+            <div class="comment">
+                <img src="https://via.placeholder.com/50" alt="User 1">
+                <p>Love the clarity of information and clean design!</p>
+            </div>
+
+            <div class="comment">
+                <img src="https://via.placeholder.com/50" alt="User 2">
+                <p>Maybe you could add more details about specific types of visas available.</p>
+            </div>
+
+            <div class="comment">
+                <img src="https://via.placeholder.com/50" alt="User 3">
+                <p>The premium services section is very appealing and well organized.</p>
+            </div>
+
+            <div class="comment">
+                <img src="https://via.placeholder.com/50" alt="User 4">
+                <p>Great for getting quick answers on immigration topics!</p>
+            </div>
+
+            <div class="comment">
+                <img src="https://via.placeholder.com/50" alt="User 5">
+                <p>Would love to see more testimonials from people who successfully relocated.</p>
+            </div>
+
+            <div class="comment">
+                <img src="https://via.placeholder.com/50" alt="User 6">
+                <p>How can I apply for premium membership? Is there a waiting list?</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
