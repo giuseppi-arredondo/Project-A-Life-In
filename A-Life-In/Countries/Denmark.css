@@ -1,0 +1,74 @@
+    body[data-country="denmark"] {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    }
+
+    /* Encabezado */
+    .header-country {
+    background: linear-gradient(90deg, #c60c30, #a4001d);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .SignUpP1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin: 0;
+    }
+
+    /* Contenido general */
+    .content-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    }
+
+    .highlight {
+    background-color: rgba(198, 12, 48, 0.1);
+    border-left: 4px solid #c60c30;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    }
+
+    .FormatP {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    }
+
+    /* Mapa */
+    .location {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #c60c30;
+    border-radius: 8px;
+    }
+
+    /* Botón de registro */
+    .submit {
+    background-color: #a4001d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    }
+
+    .submit:hover {
+    background-color: #c60c30;
+    }
+
+    /* Footer */
+    .footer-country {
+    background: #a4001d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    }

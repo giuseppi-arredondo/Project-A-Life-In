@@ -1,0 +1,156 @@
+    /* ==============================================
+    A LIFE IN - Australia version
+    ============================================== */
+
+    /* === VARIABLES === */
+    :root {
+    --main-bg: #f7fbff;
+    --text-color: #17202a;
+    --accent-color: #012169;     /* navy blue (flag) */
+    --secondary-accent: #e4002b; /* red (flag) */
+    --button-bg: var(--accent-color);
+    --button-hover: #00174d;
+    --header-gradient: linear-gradient(135deg, #012169 0%, #0a4b8c 50%, #e4002b 100%);
+    --font-family: "Outfit", sans-serif;
+    }
+
+    /* === RESET === */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+    body {
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+    overflow-x: hidden;
+    }
+
+    /* === HEADER === */
+    .header-country {
+    background: var(--header-gradient);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+    border-bottom: 3px solid rgba(0,0,0,0.06);
+    }
+
+    .SignUpP1 {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    animation: fadeInDown 1s ease forwards;
+    }
+
+    /* === SECTIONS (shared layout) === */
+    .content-section,
+    .intro-country,
+    .info-country,
+    .visuals-country,
+    .cta-country {
+    max-width: 980px;
+    margin: 2.75rem auto;
+    padding: 1rem 2rem;
+    }
+
+    /* === INTRO === */
+    .intro-country .highlight {
+    background: rgba(1, 33, 105, 0.08);
+    border-left: 5px solid var(--accent-color);
+    padding: 1.4rem;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    animation: fadeIn 1s ease-in-out;
+    }
+
+    /* === INFO TEXT === */
+    .info-country p {
+    margin-bottom: 1.25rem;
+    text-align: justify;
+    font-size: 1.03rem;
+    }
+
+    /* === MAP === */
+    .location {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+    border: 2px solid rgba(1,33,105,0.06);
+    }
+
+    /* === CALL TO ACTION === */
+    .cta-country {
+    text-align: center;
+    background: rgba(228, 0, 43, 0.05);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    }
+
+    .cta-country p {
+    font-size: 1.08rem;
+    margin-bottom: 1.25rem;
+    }
+
+    /* === BUTTONS === */
+    .submit {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    transition: transform .22s ease, background .22s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    .submit:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+    }
+
+    /* === FOOTER === */
+    .footer-country {
+    text-align: center;
+    padding: 2rem;
+    background: #f1f6fb;
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 3.5rem;
+    border-top: 3px solid rgba(1,33,105,0.06);
+    }
+
+    /* === ANIMATIONS === */
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-18px); }
+    to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 900px) {
+    .SignUpP1 { font-size: 2rem; padding: 0 10px; }
+    .content-section { padding: 1rem; margin: 1.5rem auto; }
+    .cta-country { padding: 1.25rem; }
+    .submit { width: 84%; }
+    }

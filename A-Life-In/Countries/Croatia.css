@@ -1,0 +1,152 @@
+    /* ==============================================
+    A LIFE IN - Croatia version (Croatia.css)
+    Same skeleton & behavior as China / Colombia pages
+    ============================================== */
+
+    /* === VARIABLES === */
+    :root{
+    --main-bg: #fbfcfe;
+    --text-color: #1f2933;
+    --accent-color: #005eb8;    /* azul Adriático / estético */
+    --secondary-accent: #d62f27;/* rojo para detalles */
+    --button-bg: var(--accent-color);
+    --button-hover: #003a78;
+    --header-gradient: linear-gradient(135deg, #005eb8 0%, #9fd4ff 50%, #ffffff 100%);
+    --font-family: "Outfit", sans-serif;
+    }
+
+    /* === GLOBAL RESET === */
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+    font-family:var(--font-family);
+    background-color:var(--main-bg);
+    color:var(--text-color);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* === HEADER === */
+    .header-country{
+    background:var(--header-gradient);
+    color:#fff;
+    text-align:center;
+    padding:3rem 1rem;
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+    border-bottom: 3px solid rgba(0,0,0,0.04);
+    }
+    .SignUpP1,
+    .header-country h1{
+    font-size:2.6rem;
+    letter-spacing:1px;
+    text-transform: none;
+    font-weight:700;
+    margin:0;
+    animation:fadeInDown 0.9s ease both;
+    }
+
+    /* === CONTENT SECTIONS (shared layout) === */
+    .content-section,
+    .intro-country,
+    .info-country,
+    .visuals-country,
+    .cta-country{
+    max-width:980px;
+    margin:2.5rem auto;
+    padding:1rem 2rem;
+    }
+
+    /* === INTRO HIGHLIGHT === */
+    .intro-country .highlight{
+    background: rgba(0,94,184,0.06);
+    border-left:5px solid var(--accent-color);
+    padding:1.5rem;
+    border-radius:12px;
+    font-size:1.12rem;
+    animation:fadeIn 1s ease-in-out;
+    }
+
+    /* === INFO TEXT === */
+    .info-country p{
+    margin-bottom:1.25rem;
+    text-align:justify;
+    font-size:1.03rem;
+    }
+
+    /* === IMAGES & MAP === */
+    .imgPhoto{
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin:2rem auto;
+    border-radius:14px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition: transform .28s ease, box-shadow .28s ease;
+    }
+    .imgPhoto:hover{ transform:scale(1.02); box-shadow:0 10px 30px rgba(0,0,0,0.12); }
+
+    .location{
+    display:block;
+    width:100%;
+    max-width:900px;
+    margin:2rem auto;
+    border-radius:12px;
+    box-shadow:0 6px 22px rgba(0,0,0,0.08);
+    border:1px solid rgba(0,94,184,0.04);
+    }
+
+    /* === CTA === */
+    .cta-country{
+    text-align:center;
+    background: rgba(0,94,184,0.06);
+    border-top:3px solid var(--accent-color);
+    border-radius:12px;
+    padding:2rem;
+    margin-top:3rem;
+    }
+    .cta-country p{ font-size:1.08rem; margin-bottom:1.2rem; }
+
+    /* === BUTTON === */
+    .submit{
+    background:var(--button-bg);
+    color:#fff;
+    border:none;
+    border-radius:50px;
+    padding:.9rem 2.4rem;
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing:.4px;
+    cursor:pointer;
+    transition: transform .22s ease, background .22s ease;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    .submit:hover{ background:var(--button-hover); transform:translateY(-3px); }
+
+    /* === FOOTER === */
+    .footer-country{
+    text-align:center;
+    padding:2rem;
+    background:#f6f9ff;
+    font-size:.95rem;
+    color:#444;
+    margin-top:3.5rem;
+    border-top:3px solid rgba(0,94,184,0.04);
+    }
+
+    /* === ANIMATIONS === */
+    @keyframes fadeIn{ from{opacity:0; transform:translateY(12px);} to{opacity:1; transform:translateY(0);} }
+    @keyframes fadeInDown{ from{opacity:0; transform:translateY(-16px);} to{opacity:1; transform:translateY(0);} }
+
+    /* === RESPONSIVE === */
+    @media (max-width:900px){
+    .SignUpP1{ font-size:2rem; padding:0 10px; }
+    .content-section{ padding:1rem; margin:1.25rem auto; }
+    .cta-country{ padding:1.25rem; }
+    .submit{ width:84%; }
+    }
+    @media (max-width:480px){
+    .location{ width:100%; height:auto; }
+    .SignUpP1{ font-size:1.6rem; }
+    .content-section{ padding: .8rem; }
+    }

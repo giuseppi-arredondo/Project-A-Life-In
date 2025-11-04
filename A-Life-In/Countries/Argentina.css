@@ -1,0 +1,176 @@
+/* ==============================================
+   A LIFE IN - Argentina version
+   ============================================== */
+
+/* === VARIABLES === */
+:root {
+    --main-bg: #f9f9f9;
+    --text-color: #1c1c1c;
+    --accent-color: #75aadb; /* Celeste bandera */
+    --secondary-accent: #ffffff; /* Blanco bandera */
+    --button-bg: #75aadb;
+    --button-hover: #5b92c9;
+    --header-gradient: linear-gradient(135deg, #75aadb, #ffffff, #f5cc00);
+    --font-family: "Outfit", sans-serif;
+}
+
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* === HEADER === */
+.header-country {
+    background: var(--header-gradient);
+    color: #003366;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #f5cc00;
+}
+
+.SignUpP1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    animation: fadeInDown 1.2s ease forwards;
+}
+
+/* === CONTENT SECTIONS === */
+.content-section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+}
+
+/* === INTRO === */
+.highlight {
+    background: rgba(117, 170, 219, 0.12);
+    border-left: 5px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* === INFO TEXT === */
+.info-country p {
+    margin-bottom: 1.3rem;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+/* === IMAGES === */
+.imgPhoto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.imgPhoto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* === MAP === */
+.location {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 2.5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* === CALL TO ACTION === */
+.cta-country {
+    text-align: center;
+    background: rgba(117, 170, 219, 0.1);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.cta-country p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* === BUTTON === */
+.submit {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.9rem 2.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+.submit:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+}
+
+/* === FOOTER === */
+.footer-country {
+    text-align: center;
+    padding: 2rem;
+    background: #e8f1f8;
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 4rem;
+    border-top: 3px solid #75aadb;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .SignUpP1 {
+        font-size: 2rem;
+    }
+    .intro-country,
+    .info-country,
+    .cta-country {
+        padding: 1rem;
+    }
+    .imgPhoto,
+    .location {
+        width: 100%;
+    }
+    .submit {
+        width: 80%;
+    }
+}
