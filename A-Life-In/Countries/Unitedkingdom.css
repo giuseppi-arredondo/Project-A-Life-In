@@ -1,7 +1,7 @@
     :root {
-        --color-primary: #02529C; /* Azul bandera */
-        --color-secondary: #FFFFFF; /* Blanco bandera */
-        --color-accent: #DC1E35; /* Rojo bandera */
+        --color-primary: #00247D; /* Azul bandera UK */
+        --color-secondary: #FFFFFF; /* Blanco bandera UK */
+        --color-accent: #CF142B; /* Rojo bandera UK */
     }
 
     body {
@@ -18,11 +18,17 @@
         padding: 20px;
     }
 
-    #h1Iceland {
+    #h1UnitedKingdom {
         font-size: 2.5em;
         font-weight: 700;
         color: var(--color-secondary);
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .country-code {
+        font-size: 0.8em;
+        color: var(--color-secondary);
+        opacity: 0.8;
     }
 
     .FormatP {
@@ -36,12 +42,21 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
-    .location {
-        border-radius: 12px;
+    .imgPhoto {
+        border-radius: 15px;
         margin-top: 20px;
         width: 80%;
         max-width: 700px;
-        height: 400px;
+        height: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .location {
+        border-radius: 12px;
+        margin-top: 25px;
+        width: 80%;
+        max-width: 800px;
+        height: 450px;
     }
 
     .submit {

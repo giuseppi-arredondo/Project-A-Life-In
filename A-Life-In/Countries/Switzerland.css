@@ -1,13 +1,13 @@
-    :root{
-        --color-primary: #006AA7; /* azul bandera Suecia */
-        --color-secondary: #FFCC00; /* amarillo bandera Suecia (usado como acento) */
+    :root {
+        --color-primary: #D52B1E; /* rojo bandera Suiza */
+        --color-secondary: #FFFFFF; /* blanco bandera Suiza */
         --text-color: #ffffff;
     }
 
-    /* base y formato (igual margen/espaciado que referencia Spain/Mexico/Korea) */
+    /* base general igual a los anteriores */
     body {
         font-family: 'Poppins', sans-serif;
-        background: linear-gradient(135deg, var(--color-primary), #0b6fb0);
+        background: linear-gradient(135deg, var(--color-primary), #b02018);
         color: var(--text-color);
         margin: 0;
         padding: 0;
@@ -19,7 +19,7 @@
         padding: 20px;
     }
 
-    #h1Sweden {
+    #h1Switzerland {
         font-size: 2.5em;
         font-weight: 700;
         color: var(--color-secondary);
@@ -40,7 +40,7 @@
         margin: 40px auto;
         font-size: 1.05rem;
         line-height: 1.6;
-        background-color: rgba(255,255,255,0.06);
+        background-color: rgba(255,255,255,0.08);
         color: rgba(255,255,255,0.95);
         padding: 24px;
         border-radius: 12px;
@@ -48,7 +48,7 @@
         box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
-    /* mapa - centrado y con mismo ancho que en Spain (800) */
+    /* mapa centrado */
     .location {
         display: block;
         margin: 32px auto;
@@ -59,7 +59,7 @@
         box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
-    /* botón */
+    /* botón igual estilo */
     .submit {
         background-color: var(--color-secondary);
         border: none;
@@ -73,13 +73,13 @@
     }
 
     .submit:hover {
-        background-color: #ffe07a;
+        background-color: #ffeaea;
         transform: translateY(-3px);
     }
 
     /* responsive */
     @media (max-width: 768px) {
-        #h1Sweden { font-size: 1.9rem; }
+        #h1Switzerland { font-size: 1.9rem; }
         .FormatP { margin: 20px 12px; padding: 18px; }
         .location { width: 92%; height: 320px; }
         .submit { width: 80%; }

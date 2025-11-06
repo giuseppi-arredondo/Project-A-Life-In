@@ -1,0 +1,130 @@
+    /* Variables de colores */
+    :root {
+        --primary-color: #4A90E2; /* Azul elegante */
+        --secondary-color: #FFFFFF; /* Blanco para texto */
+        --accent-color: #F5A623; /* Naranja para botones */
+        --bg-color: #F0F4F8; /* Fondo suave */
+        --input-bg: #FFFFFF;
+        --input-border: #CCCCCC;
+    }
+
+    /* Reset general */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .container {
+        background-color: var(--secondary-color);
+        border-radius: 15px;
+        max-width: 500px;
+        width: 100%;
+        padding: 40px 30px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+        font-size: 2.2em;
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    .instruction {
+        margin: 25px 0 15px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-group label {
+        font-weight: 600;
+        color: #333;
+    }
+
+    .input-group input {
+        padding: 12px 15px;
+        border: 1.5px solid var(--input-border);
+        border-radius: 8px;
+        font-size: 1em;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .input-group input:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 5px rgba(74,144,226,0.5);
+        outline: none;
+    }
+
+    .submit-btn {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: var(--accent-color);
+        transform: scale(1.03);
+    }
+
+    /* Sección de agregar tarjeta */
+    .add-card-section {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .add-card-section p {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .add-card-btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 12px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .add-card-btn:hover {
+        background-color: var(--accent-color);
+        transform: scale(1.05);
+    }

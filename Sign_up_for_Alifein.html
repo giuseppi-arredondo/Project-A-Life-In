@@ -1,35 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Sign up for Alifein</title>
-    <link rel="stylesheet" href="Style-A-Life_in.css">
-    <link rel="stylesheet" href="fonts-A-Life-in.css">
-</head>
-<body>
-    <h1>A Life in</h1>
-    <p class="Pcenter">Sign up for <b>A Life in</b> and get proper advice on how to achieve proper and completely legal immigration.</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up for Alifein</title>
+        
+        <!-- Estilos -->
+        <link rel="stylesheet" href="Style-A-Life_in.css">
+        <link rel="stylesheet" href="fonts-A-Life-in.css">
+        <link rel="stylesheet" href="Sing_up_for_Alifein.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>A Life in</h1>
+                <p class="subtitle">Sign up for <b>A Life in</b> and get proper advice on how to achieve proper and completely legal immigration.</p>
+            </header>
 
-    <p class="Pcenter">Please complete the following boxes for a successful registration:</p>
-    <form class="Pcenter">
-        <p>Names:</p>
-        <input type="text"minlength="3" maxlength="13" name="names">
-        <input type="text"minlength="3" maxlength="13" name="names">
-        <p>surnames:</p>
-        <input type="text"minlength="3" maxlength="13" name="surnames">
-        <input type="text"minlength="3" maxlength="13" name="surnames">
-        <p>Email:</p>
-        <input type="email" name="alifein@gmail.com">  
-        <p>Phone Number:</p> 
-        <input type="tel" minlength="8" maxlength="11" name="Your cell phone number" required>
-        <input type="submit">
-    </form>
+            <main>
+                <p class="instruction">Please complete the following fields for a successful registration:</p>
+                <form class="signup-form">
+                    <div class="input-group">
+                        <label>First Name:</label>
+                        <input type="text" name="first_name" minlength="3" maxlength="13" placeholder="Enter first name" required>
+                        <input type="text" name="middle_name" minlength="3" maxlength="13" placeholder="Enter middle name">
+                    </div>
 
-    <p class="Pcenter">Add a card</p>   
-    <a href="add_card.html" class="ButtonSigUp">
-        <form>
-            <input type="button" value="Add Card" name="Add Card" placeholder="Add Card">
-        </form>
-    </a>    
+                    <div class="input-group">
+                        <label>Last Name:</label>
+                        <input type="text" name="last_name" minlength="3" maxlength="13" placeholder="Enter last name" required>
+                        <input type="text" name="second_last_name" minlength="3" maxlength="13" placeholder="Enter second last name">
+                    </div>
 
-</body>
-</html>
+                    <div class="input-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number:</label>
+                        <input type="tel" name="phone" minlength="8" maxlength="11" placeholder="Enter phone number" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+
+                <div class="add-card-section">
+                    <p>Add a card</p>
+                    <a href="add_card.html" class="add-card-btn">Add Card</a>
+                </div>
+            </main>
+        </div>
+    </body>
+    </html>

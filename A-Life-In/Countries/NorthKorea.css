@@ -1,0 +1,73 @@
+    /* NorthKorea.css */
+    /* Estilo consistente con Netherlands.css */
+
+    body {
+        background: linear-gradient(180deg, #001f3f, #003366, #001a26);
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-country {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    #h1NorthKorea {
+        font-size: 2.5em;
+        color: #ff4444; /* Rojo fuerte inspirado en la bandera de Corea del Norte */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .country-code {
+        font-size: 0.7em;
+        color: #cccccc;
+    }
+
+    .FormatP {
+        width: 80%;
+        margin: 40px auto;
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 1.7em;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.1);
+    }
+
+    .location {
+        display: block;
+        margin: 40px auto;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .submit {
+        display: inline-block;
+        background-color: #e60000;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 35px;
+        font-size: 1.1em;
+        cursor: pointer;
+        margin-bottom: 40px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .submit:hover {
+        background-color: #ff1a1a;
+        transform: scale(1.05);
+    }
+
+    .imgPhoto {
+        display: block;
+        margin: 20px auto;
+        max-width: 85%;
+        border-radius: 14px;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    }

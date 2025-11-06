@@ -1,45 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment Page - A Life in</title>
 
-    <title>Payment Page</title>
-    <link rel="stylesheet" href="/Style-A-Life_in.css">
-    <link rel="stylesheet" href="/fonts-A-Life-in.css">
-</head>
-<body>
-    <h1>Pay</h1>
-        <h2 class="Centerh2">A Life in Membership</h2>
-        <p class="Pcenter">Proof</p>
-        <p class="Pcenter">Monthly charge</p>
-        <p class="Pcenter">Billing start date: <span id="billingStartDate"></span></p>
-        <script>
-            var currentDate = new Date();
-            var day = currentDate.getDate();
-            var month = currentDate.getMonth() + 1;
-            var year = currentDate.getFullYear();
-            var formattedDate = day + '/' + month + '/' + year;
-            document.getElementById('billingStartDate').textContent = formattedDate;
-        </script>
-        <p class="Pcenter"><strong>$5 per month</strong></p>
-        <p class="Pcenter">Total to date: <strong>$15</strong></p>
-        <p class="Pcenter">A Life in</p>
-        <p class="Pcenter">Add credit or debit card</p>
-        <form class="Pcenter">
-            <label for="card-number">Card number</label><br>
-            <input type="text" id="card-number" name="card-number" placeholder="Mastercard or Visa" required><br>
-            <label for="expiry-date">Expiration date</label><br>
-            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM / AA" required><br>
-            <label for="cvc">CVC</label><br>
-            <input type="text" id="cvc" name="cvc" required><br>
-            <label for="cardholder-name">Name of owner</label><br>
-            <input type="text" id="cardholder-name" name="cardholder-name" required><br>
-            <p>Billing will begin on <span id="billingStartDate"></span>, when your free trial ends, and will automatically renew each month. Payments for partial billing periods will not be refunded. You can cancel your membership at any time in settings. 
-            <a href="Cancellation_of_registration.html" target="_blank">Learn more.</a></p>
-            <p>By continuing, you confirm that you are over 18 years of age and agree to these terms.</p>
-            <p>By continuing, you agree to A Life in Payments' Terms of Service. Our Privacy Notice describes how your data is used.</p>
-            <a href="/Premiun-A-Life-In.html" class="SignUpP3">
-                <input type="button" value="confirm" placeholder="confirm">
-            </a>
-        </form>
-</body>
-</html>
+        <!-- Estilos -->
+        <link rel="stylesheet" href="/Style-A-Life_in.css">
+        <link rel="stylesheet" href="/fonts-A-Life-in.css">
+        <link rel="stylesheet" href="add_card.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Pay</h1>
+                <h2 class="subtitle">A Life in Membership</h2>
+            </header>
+
+            <main>
+                <div class="billing-info">
+                    <p>Proof</p>
+                    <p>Monthly charge</p>
+                    <p>Billing start date: <span id="billingStartDate"></span></p>
+                    <script>
+                        var currentDate = new Date();
+                        var day = currentDate.getDate();
+                        var month = currentDate.getMonth() + 1;
+                        var year = currentDate.getFullYear();
+                        var formattedDate = day + '/' + month + '/' + year;
+                        document.getElementById('billingStartDate').textContent = formattedDate;
+                    </script>
+                    <p><strong>$5 per month</strong></p>
+                    <p>Total to date: <strong>$15</strong></p>
+                </div>
+
+                <form class="payment-form">
+                    <h3>Add credit or debit card</h3>
+                    
+                    <label for="card-number">Card number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Mastercard or Visa" required>
+
+                    <label for="expiry-date">Expiration date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM / YY" required>
+
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" name="cvc" placeholder="123" required>
+
+                    <label for="cardholder-name">Name of owner</label>
+                    <input type="text" id="cardholder-name" name="cardholder-name" placeholder="John Doe" required>
+
+                    <p class="billing-note">
+                        Billing will begin on <span id="billingStartDate2"></span>, when your free trial ends, and will automatically renew each month. Payments for partial billing periods will not be refunded. You can cancel your membership at any time in settings. 
+                        <a href="Cancellation_of_registration.html" target="_blank">Learn more.</a>
+                    </p>
+                    <script>
+                        document.getElementById('billingStartDate2').textContent = formattedDate;
+                    </script>
+
+                    <p class="terms">By continuing, you confirm that you are over 18 years of age and agree to these terms.</p>
+                    <p class="terms">By continuing, you agree to A Life in Payments' Terms of Service. Our Privacy Notice describes how your data is used.</p>
+
+                    <button type="submit" class="confirm-btn">Confirm</button>
+                </form>
+            </main>
+        </div>
+    </body>
+    </html>

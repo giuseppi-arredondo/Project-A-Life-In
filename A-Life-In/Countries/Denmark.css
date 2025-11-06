@@ -1,74 +1,187 @@
-    body[data-country="denmark"] {
-    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
-    font-family: 'Poppins', sans-serif;
-    color: #222;
+/* ============================================== 
+BASE STYLES - A LIFE IN (Denmark version)
+============================================== */
+
+/* === VARIABLES === */
+:root {
+    --main-bg: #fafafa;
+    --text-color: #1a1a1a;
+    --accent-color: #c60c30; /* rojo bandera danesa */
+    --secondary-accent: #ffffff;
+    --button-bg: #c60c30;
+    --button-hover: #a10a26;
+    --header-gradient: linear-gradient(135deg, #c60c30, #ffffff);
+    --font-family: "Outfit", sans-serif;
+}
+
+/* === GLOBAL RESET === */
+* {
     margin: 0;
     padding: 0;
-    }
+    box-sizing: border-box;
+}
 
-    /* Encabezado */
-    .header-country {
-    background: linear-gradient(90deg, #c60c30, #a4001d);
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* === HEADER === */
+.header-country {
+    background: var(--header-gradient);
     color: white;
-    padding: 30px 0;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
+    padding: 3rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
 
-    .SignUpP1 {
-    font-size: 2rem;
+.header-country h1 {
+    font-size: 2.8rem;
     letter-spacing: 1px;
-    margin: 0;
-    }
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease forwards;
+}
 
-    /* Contenido general */
-    .content-section {
+/* === SECTIONS === */
+.content-section,
+.intro-country,
+.info-country,
+.visuals-country,
+.cta-country {
     max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    }
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+}
 
-    .highlight {
-    background-color: rgba(198, 12, 48, 0.1);
-    border-left: 4px solid #c60c30;
-    padding: 15px 20px;
-    font-size: 1.1rem;
-    }
+/* === INTRO === */
+.intro-country .highlight {
+    background: rgba(198, 12, 48, 0.08);
+    border-left: 5px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    animation: fadeIn 1.2s ease-in-out;
+}
 
-    .FormatP {
-    line-height: 1.6;
-    margin-bottom: 20px;
-    }
+/* === INFO SECTION === */
+.info-country h2 {
+    color: var(--accent-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
 
-    /* Mapa */
-    .location {
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #c60c30;
-    border-radius: 8px;
-    }
+.info-country p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
 
-    /* Botón de registro */
-    .submit {
-    background-color: #a4001d;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-    }
-
-    .submit:hover {
-    background-color: #c60c30;
-    }
-
-    /* Footer */
-    .footer-country {
-    background: #a4001d;
-    color: white;
+/* === MAP === */
+.visuals-country h2 {
     text-align: center;
-    padding: 15px 0;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.location {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === CALL TO ACTION === */
+.cta-country {
+    text-align: center;
+    background: rgba(198, 12, 48, 0.07);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.cta-country p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.submit {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.submit:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+}
+
+/* === FOOTER === */
+.footer-country {
+    text-align: center;
+    padding: 2rem;
+    background: #ececec;
     font-size: 0.9rem;
+    color: #555;
+    margin-top: 4rem;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .header-country h1 {
+        font-size: 2rem;
+    }
+
+    .intro-country,
+    .info-country,
+    .cta-country {
+        padding: 1rem;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .submit {
+        width: 80%;
+    }
+}
